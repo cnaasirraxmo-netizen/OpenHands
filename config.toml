@@ -1,0 +1,17 @@
+# config.toml
+[core]
+# Qeex workspace-ka
+workspace_base = "/workspace"
+
+# Ha isku dayin inuu stdin akhriyo
+skip_input_validation = true
+
+# LLM Configuration
+[llm]
+model = "openai/gpt-4o"
+api_key = "${OPENROUTER_API_KEY}"
+base_url = "https://openrouter.ai/api/v1"
+
+# Sandbox Configuration
+[sandbox]
+base_container_image = "nikolaik/python-nodejs:latest"
